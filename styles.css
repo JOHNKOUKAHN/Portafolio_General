@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body{
     transition: 0.3s;
     margin: 0;
     padding: 0;
     background-color: rgb(230,230,230);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Press Start 2P', cursive;
 }
 
 h1{
@@ -24,6 +24,11 @@ h2{
 
 .square h2{
     margin: 50px 0 10px 0;
+}
+
+#zelda-kaboom{
+    background-image: url("imagenes/portadas/portada_zelda.png");
+    background-size: cover;
 }
 
 p{
