@@ -26,18 +26,47 @@ h2{
     margin: 50px 0 10px 0;
 }
 
+
+/*
+Road To Saquares
+*/
+
+#mastering-javascript{
+    background-image: url("imagenes/portadas/roadto/JavaScript_Logo.png");
+    background-size: cover;
+}
+
+#mastering-vuejs{
+    background-image: url("imagenes/portadas/roadto/VueLogo.png");
+    background-size: cover;
+}
+#mastering-computervision{
+    background-image: url("imagenes/portadas/roadto/computervision.png");
+    background-size: cover;
+}
+#mastering-machinelearning{
+    background-image: url("imagenes/portadas/roadto/mechinelearning.png");
+    background-size: cover;
+}
+
+
+/*
+Finalized projects squares
+*/
 #zelda-kaboom{
-    background-image: url("imagenes/portadas/portada_zelda.png");
+    background-image: url("imagenes/portadas/finalized/portada_zelda.png");
     background-size: cover;
 }
 #pokemon-vue{
-    background-image: url("imagenes/portadas/vuepokemon.png");
+    background-image: url("imagenes/portadas/finalized/vuepokemon.png");
     background-size: cover;
 }
 
 p{
     margin: 0px;
     font-size: 20px;
+    line-height: 1.4;
+    text-align: justify;
 }
 
 a{
@@ -99,11 +128,11 @@ header{
     color: rgb(255,255,255);
 }
 .main{
-    height: 80vh;
+    height: 150vh;
 }
 
 .main-text{
-    width: 50%;
+    width: 80%;
     padding: 30px;
 }
 
@@ -135,6 +164,21 @@ footer{
     background-color: rgb(30,30,30)
 }
 
+.sub-tittle{
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 970px) {
+    .text-description{
+        display: none;
+    }
+
+    .main{
+        height: 50vh
+    }
+}
+
 @media only screen and (min-width: 970px) {
     .square{
         width: 48%;
@@ -142,3 +186,5 @@ footer{
         height: 600px;
     }
 }
+
+
