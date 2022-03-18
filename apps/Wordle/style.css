@@ -1,0 +1,51 @@
+.row{
+    height: 10vh;
+}
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.words-greed{
+    background-color: rgb(45, 45, 45);
+    height: 60vh;
+    color: aliceblue;
+    padding-top: 1%;
+}
+
+.key{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin-left: 2px;
+    width: 6vh;
+    height: 8vh;
+    color: aliceblue;
+    background-color: darkgray;
+    border-radius: 0.5vh;
+}
+
+.keyboard{
+    height: 40vh;
+    background-color: rgb(45, 45, 45);
+    padding-top: 2%;
+}
+
+.letter-box{
+    display: flex;
+    width: 8vh;
+    height: 8vh;
+    border-color:darkgrey;
+    border-style: solid;
+    border-radius: 1vh;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    margin-bottom: 1px;
+}
+
+.big{
+    width: 10vh;
+}
