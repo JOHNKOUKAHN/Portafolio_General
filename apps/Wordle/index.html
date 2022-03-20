@@ -8,104 +8,116 @@
     <link rel="stylesheet" href="style.css">
   
 </head>
-<body>
-    <nav>Punto Zero</nav>
+<body id="body">
+    <nav>Punto Zero
+        <div id="wordArray" ></div>
+        <div id="lineNumber">1</div>
+        <div id="won">0</div>
+    </nav>
     <div class="container">
         <div class="words-greed">
             <div class="row">
                 <div class="line">    
-                    <div class="letter-box">A</div> 
-                    <div class="letter-box">W</div> 
-                    <div class="letter-box">X</div> 
-                    <div class="letter-box">M</div> 
-                    <div class="letter-box last"></div>
+                    <div class="letter-box" id="LB11"></div> 
+                    <div class="letter-box" id="LB12"></div> 
+                    <div class="letter-box" id="LB13"></div> 
+                    <div class="letter-box" id="LB14"></div> 
+                    <div class="letter-box last" id="LB15"></div>
                 </div> 
             </div> 
             <div class="row">
                 <div class="line">    
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box last"></div>
+                    <div class="letter-box" id="LB21"></div> 
+                    <div class="letter-box" id="LB22"></div> 
+                    <div class="letter-box" id="LB23"></div> 
+                    <div class="letter-box" id="LB24"></div> 
+                    <div class="letter-box last" id="LB25"></div>
                 </div> 
             </div> 
             <div class="row">
                 <div class="line">    
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box last"></div>
+                    <div class="letter-box" id="LB31"></div> 
+                    <div class="letter-box" id="LB32"></div> 
+                    <div class="letter-box" id="LB33"></div> 
+                    <div class="letter-box" id="LB34"></div> 
+                    <div class="letter-box last" id="LB35"></div>
                 </div> 
             </div> 
             <div class="row">
                 <div class="line">    
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box last"></div>
+                    <div class="letter-box" id="LB41"></div> 
+                    <div class="letter-box" id="LB42"></div> 
+                    <div class="letter-box" id="LB43"></div> 
+                    <div class="letter-box" id="LB44"></div> 
+                    <div class="letter-box last" id="LB45"></div>
                 </div> 
             </div> 
             <div class="row">
                 <div class="line">    
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box last"></div>
+                    <div class="letter-box" id="LB51"></div> 
+                    <div class="letter-box" id="LB52"></div> 
+                    <div class="letter-box" id="LB53"></div> 
+                    <div class="letter-box" id="LB54"></div> 
+                    <div class="letter-box last" id="LB55"></div>
                 </div> 
             </div> 
             <div class="row">
                 <div class="line">    
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box"></div> 
-                    <div class="letter-box last"></div>
+                    <div class="letter-box" id="LB61"></div> 
+                    <div class="letter-box" id="LB62"></div> 
+                    <div class="letter-box" id="LB63"></div> 
+                    <div class="letter-box" id="LB64"></div> 
+                    <div class="letter-box last" id="LB65"></div>
+                </div> 
+            </div> 
+            <div class="row">
+                <div class="line" >   
+                    <div id="reveal-word">
+                        <div id="word"></div>
+                        <div onclick="restart()">Reiniciar</div>
+                    </div>
                 </div> 
             </div> 
         </div>
         <div class="keyboard">
             <div class="row">
                 <div class="line">
-                    <div class="key"><span>Q</span></div>
-                    <div class="key">W</div>
-                    <div class="key">E</div>
-                    <div class="key">R</div>
-                    <div class="key">T</div>
-                    <div class="key">Y</div>
-                    <div class="key">U</div>
-                    <div class="key">I</div>
-                    <div class="key">O</div>
-                    <div class="key">P</div>
+                    <div id="Q" class="key" >Q</div>
+                    <div id="W" class="key"  onclick="FillLetterBox('W')">W</div>
+                    <div id="E" class="key"  onclick="FillLetterBox('E')">E</div>
+                    <div id="R" class="key"  onclick="FillLetterBox('R')">R</div>
+                    <div id="T" class="key"  onclick="FillLetterBox('T')">T</div>
+                    <div id="Y" class="key"  onclick="FillLetterBox('Y')">Y</div>
+                    <div id="U" class="key"  onclick="FillLetterBox('U')">U</div>
+                    <div id="I" class="key"  onclick="FillLetterBox('I')">I</div>
+                    <div id="O" class="key"  onclick="FillLetterBox('O')">O</div>
+                    <div id="P" class="key"  onclick="FillLetterBox('P')">P</div>
                 </div>
             </div>
             <div class="row">
                 <div class="line">
-                    <div class="key">A</div>
-                    <div class="key">S</div>
-                    <div class="key">D</div>
-                    <div class="key">F</div>
-                    <div class="key">G</div>
-                    <div class="key">H</div>
-                    <div class="key">J</div>
-                    <div class="key">K</div>
-                    <div class="key">L</div>
+                    <div id="A" class="key"  onclick="FillLetterBox('A')">A</div>
+                    <div id="S" class="key"  onclick="FillLetterBox('S')">S</div>
+                    <div id="D" class="key"  onclick="FillLetterBox('D')">D</div>
+                    <div id="F" class="key"  onclick="FillLetterBox('F')">F</div>
+                    <div id="G" class="key"  onclick="FillLetterBox('G')">G</div>
+                    <div id="H" class="key"  onclick="FillLetterBox('H')">H</div>
+                    <div id="J" class="key"  onclick="FillLetterBox('J')">J</div>
+                    <div id="K" class="key"  onclick="FillLetterBox('K')">K</div>
+                    <div id="L" class="key"  onclick="FillLetterBox('L')">L</div>
                 </div>
             </div>
             <div class="row">
                 <div class="line">
-                    <div class="key big">enter</div>
-                    <div class="key">Z</div>
-                    <div class="key">X</div>
-                    <div class="key">C</div>
-                    <div class="key">V</div>
-                    <div class="key">B</div>
-                    <div class="key">N</div>
-                    <div class="key">M</div>
-                    <div class="key big">back</div>
+                    <div class="key big" onclick="checkWord()">enter</div>
+                    <div id="Z" class="key"  onclick="FillLetterBox('Z')">Z</div>
+                    <div id="X" class="key"  onclick="FillLetterBox('X')">X</div>
+                    <div id="C" class="key"  onclick="FillLetterBox('C')">C</div>
+                    <div id="V" class="key"  onclick="FillLetterBox('V')">V</div>
+                    <div id="B" class="key"  onclick="FillLetterBox('B')">B</div>
+                    <div id="N" class="key"  onclick="FillLetterBox('N')">N</div>
+                    <div id="M" class="key"  onclick="FillLetterBox('M')">M</div>
+                    <div class="key big" onclick="Backspace()">back</div>
                 </div>
             </div>
         </div>
@@ -113,5 +125,5 @@
     </div>
     
 </body>
-<script src="script.js"></script>
+<script  src="script2.js"></script>
 </html>

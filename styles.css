@@ -61,6 +61,10 @@ Finalized projects squares
     background-image: url("imagenes/portadas/finalized/vuepokemon.png");
     background-size: cover;
 }
+#wordle{
+    background-image: url("imagenes/portadas/finalized/portada_wordel.png");
+    background-size: cover;
+}
 
 p{
     margin: 0px;
