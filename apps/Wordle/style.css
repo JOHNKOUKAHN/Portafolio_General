@@ -24,7 +24,7 @@ body{
 }
 .words-greed{
     background-color: rgb(45, 45, 45);
-    height: 60vh;
+    height: 65vh;
     color: aliceblue;
     padding-top: 3%;
 }
@@ -42,7 +42,7 @@ body{
 }
 
 .keyboard{
-    height: 40vh;
+    height: 30vh;
     background-color: rgb(45, 45, 45);
     padding-top: 1%;
 }
