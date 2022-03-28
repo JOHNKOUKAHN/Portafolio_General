@@ -1,0 +1,101 @@
+body{
+    background-color: black;
+}
+#main{
+    background-color: black;
+    width: 100%;
+    height: 200vh;
+    background-image: url(./imagenes/fondos/bgblue.jpg);
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav{color: aliceblue;
+    height: 10vh;
+    padding-top: 10px;
+    padding-left: 15px;
+    background: rgba(255, 0, 255, 0.0) ;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+nav>span{
+    padding-left: 20px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.description-container{
+    margin-top: 50px;
+    height: 30vh;
+    color: white;
+    font-size: larger;
+}
+#description{
+    padding: 30px;
+    text-align: justify;
+}
+
+#tecnologies{
+    border-right: solid white;
+    text-align: center;
+    list-style-type: none;
+}
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+ .grow:hover { 
+    margin-left: 25px; 
+    margin-right: 25px; 
+    transform: scale(1.2); 
+}
+
+.carousel{
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}    
+
+.poster{
+    margin-top: 27px;
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 32vh;
+    width: 26vh;
+    border: solid white;
+}
+
+.poster-img{
+    margin-top: 3px;
+    height: 70%;
+    width: 100%;
+    background-position: center;
+}
+
+.poster-bottom{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#poster-wordle .poster-img{
+    background: url('imagenes/portadas/finalized/wordle.png');
+    background-size: cover;
+}
+
+#poster-pokemon .poster-img{
+    background: url('imagenes/portadas/finalized/pokemon.png');
+    background-size: cover;
+}
