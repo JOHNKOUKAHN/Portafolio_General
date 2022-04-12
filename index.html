@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punto Zero Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 <body>
@@ -37,36 +36,36 @@
             </span> 
 
         </nav>    
-        
-    <div class="carousel row d-flex">
-        <div id="poster-wordle" class="col-md-4 col-sm-6 poster grow" onmouseenter="display(1)" onmouseleave="clearDescription()">
+    <div class="container">    
+    <div class="carousel row ">
+        <div id="poster-wordle" class="col poster grow" onpointerenter="display(1)" onpointerleave="clearDescription()">
             <div class="poster-img"> 
             </div>
-            <div class="poster-bottom d-flex row">
-                <div class="live-link row">
+            <div class="poster-bottom ">
+                <div class="live-link link">
                     <a href="./apps/Wordle/index.html"
                         target="blank">
                         live view
                     </a>
                 </div>
-                <div class="code-link row">
+                <div class="code-link link">
                     <a href="https://github.com/JOHNKOUKAHN/Portafolio_General/tree/main/apps/Wordle" target="blank">
                         code
                     </a>
                 </div>
             </div>
         </div>
-        <div id="poster-pokemon" class="col-md-4 col-sm-6 poster grow" onmouseenter="display(2)" onmouseleave="clearDescription()">
+        <div id="poster-pokemon" class="col poster grow" onmouseenter="display(2)" onmouseleave="clearDescription()">
             <div class="poster-img"> 
             </div>
-            <div class="poster-bottom d-flex row">
-                <div class="live-link row">
+            <div class="poster-bottom  ">
+                <div class="live-link link">
                     <a href="https://gifted-kare-1ef431.netlify.app/"
                         target="blank">
                         live view
                     </a>
                 </div>
-                <div class="code-link row">
+                <div class="code-link link">
                     <a href="https://github.com/JOHNKOUKAHN/PokemonVueJS" target="blank">
                         code
                     </a>
@@ -76,12 +75,12 @@
         
     </div>
     <div id="description-container" class="description-container  row">
-        <div id="tecnologies" class="col-6 ">
+        <div id="tecnologies" class="col-2 ">
         </div>
-        <div id="description" class="col-6">
+        <div id="description" class="col-2">
         </div>
     </div>
-
+    </div>
     </div>
 </body>
 <script src="helpers/descriptions.json"></script>
